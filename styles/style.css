@@ -121,21 +121,56 @@ ul {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .main-left {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    gap: 30px;
+    gap: 25px;
 }
 
 .card {
     display: grid;
     background-color: white;
+    border-left: 7px solid #efb42c;
+    border-radius: 7px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.card h5 {
+    grid-column: 1 / 3;
+}
+
+.card p {
+    color: #636363;
+    grid-column: 1 / 3;
+    margin-bottom: 5px;
+}
+
+.card div {
+    grid-column: 2 / 3;
+}
+
+.card img {
+    color: #333333;
+}
+
+.star {
+    margin-right: 20px;
+}
+
+.eye {
+    margin-right: 20px;
 }
 
 .main-title-1 {
-    grid-column: 1 / 3;;
+    grid-column: 1 / 3;
 }
-/* left border od content cards: #efb42c */
+/* left border of content cards: #efb42c */
